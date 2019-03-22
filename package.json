@@ -1,6 +1,6 @@
 {
   "name": "@neo9/cordova-honeywell-scanner",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Honeywell TC50/D75E Barcode Scanner and external device using the com.honeywell.aidc SDK",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neo9/cordova-honeywell-scanner.git"
+    "url": "git+https://github.com/diogoqueiros/cordova-honeywell-scanner.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -23,7 +23,7 @@
   "author": "Gaetan SENN",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neo9/cordova-honeywell-scanner/issues"
+    "url": "https://github.com/diogoqueiros/cordova-honeywell-scanner/issues"
   },
-  "homepage": "https://github.com/neo9/cordova-honeywell-scanner#readme"
+  "homepage": "https://github.com/diogoqueiros/cordova-honeywell-scanner#readme"
 }
