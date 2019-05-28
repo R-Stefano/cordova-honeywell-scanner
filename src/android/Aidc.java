@@ -177,6 +177,21 @@ public class Aidc extends CordovaPlugin implements BarcodeListener {
             }
 
             return true;
+         } else if ("enableQRCode".equals(action)) {
+            if (barcodeReader == null) {
+                callbackContext.error("no barcode reader initalized");
+            } else {
+                try {
+                    barcodeReader.setProperty(BarcodeReader.PROPERTY_QR_CODE_ENABLED, args.isNull(0) || args.getBoolean(0));
+                    callbackContext.success();
+                } catch (UnsupportedPropertyException e) {
+                    callbackContext.error(e.getMessage());
+                }
+
+                callbackContext.success();
+            }
+
+            return true;
         } else if ("listConnectedBarcodeDevices".equals(action)) {
             // Return the list of connected barcode Devices
             Log.d(TAG, "listConnectedBarcodeDevices");
