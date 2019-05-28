@@ -106,3 +106,19 @@ Disable the trigger button.
 ```js
 window.cordova.plugins.honeywell.disableTrigger(() => console.info('trigger disabled'));
 ```
+
+### enableQRCode
+
+Enable or disable QR Code scans. QR Code is enable by default
+
+Param: `enable`: boolean
+
+- To enable:
+```js
+window.cordova.plugins.honeywell.enableQRCode(true, () => console.info('QR Code enabled'), (err) => console.info(err));
+```
+
+- To disable:
+```js
+window.cordova.plugins.honeywell.enableQRCode(false, () => console.info('QR Code disabled'), (err) => console.info(err));
+```

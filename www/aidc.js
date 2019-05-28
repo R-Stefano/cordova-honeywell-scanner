@@ -30,6 +30,10 @@ var Aidc = function () {
     exec(success_cb, error_cb, "HoneywellAidc", "disableTrigger", []);
   };
 
+  this.enableQRCode = function (enable, success_cb, error_cb) {
+    exec(success_cb, error_cb, "HoneywellAidc", "enableQRCode", [enable]);
+  };
+
   this.listConnectedBarcodeDevices = function (success_cb, error_cb) {
     exec(success_cb, error_cb, "HoneywellAidc", "listConnectedBarcodeDevices", []);
   }
