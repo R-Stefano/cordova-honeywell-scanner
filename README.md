@@ -4,21 +4,17 @@
 
 - Android
 
-## Installation
+## Ionic Installation
 
-### With npm
-```bash
-npm install --save @neo9/cordova-honeywell-scanner
+Navigate to the `/plugins` folder and download the new version
+
+```
+git clone https://github.com/R-Stefano/cordova-honeywell-scanner.git
 ```
 
-### With cordova
-```bash
-cordova plugin add @neo9/cordova-honeywell-scanner
+From the `/plugins` folder, install the plugin
 ```
-
-### With ionic
-```
-ionic cordova plugin add @neo9/cordova-honeywell-scanner
+ionic cordova plugin add cordova-honeywell-scanner
 ```
 
 ## Usage
